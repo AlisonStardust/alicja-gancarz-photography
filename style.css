@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.website__headerwrapper {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 90px;
+}
+
+.website__button {
+  width: 100px;
+  height: 700px;
+  color: black;
+  opacity: 0.8;
+  border-style: none;
+}
+
+.website__parallax-first {
+    background-image: url('img/bw.jpg');
+    font-size: 70px;
+    min-height: 700px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.website__covering-div {
+  margin: 10px;
+  padding-left: 110px;
+  padding-right: 50px;
+  height:300px;
+  background-color: #A71D31;
+  font-size:20px;
+  color: black;
+  font-style: black;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.website__covering-div:before {
+  
+  content: "";
+  background-color: #F3F9D2;
+  width: 5000px;
+  height: 4500px;
+  transform: rotate(8deg) translate(-450px);
+  opacity: 0.4;
+}
+
+.covering-div2 {
+  margin: 10px;
+  padding-left: 200px;
+  padding-right: 50px;
+  height:300px;
+    color: black;
+  font-style: black;
+  background-color: #A71D31;
+  font-size:20px;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+
+.website__parallax-second {
+    /* The image used */
+    background-image: url('img/2.jpg');
+
+    /* Set a specific height */
+    min-height: 900px; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.website__parallax-third {
+    /* The image used */
+    background-image: url('img/9.jpg');
+
+    /* Set a specific height */
+    min-height: 900px; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.website__parallax-fourth {
+    /* The image used */
+    background-image: url('img/wspin.jpg');
+    min-height: 900px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+  margin: 10px;
+  height: 700px;
+  background-color: red;
+  font-size:36px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.medias {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.website_socialMedia--social {
+  padding: 40px;
+}
+
+.contact-contact {
+  padding: 30px;
+}
+
+.social-header {
+  padding: 40px;
+}
