@@ -4,18 +4,19 @@
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
+
 .website__headerwrapper {
   overflow: hidden;
   background-color: black;
   color: white;
-    position: fixed;
-    top: 0;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  height: 90px;
 }
 
 .website__button {
@@ -27,17 +28,17 @@
 }
 
 .website__parallax-first {
-    background-image: url('img/bw.jpg');
-    font-size: 70px;
-    min-height: 700px; 
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  background-image: url('img/bw.jpg');
+  font-size: 70px;
+  min-height: 700px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .website__covering-div {
@@ -56,7 +57,6 @@
 }
 
 .website__covering-div:before {
-  
   content: "";
   background-color: #F3F9D2;
   width: 5000px;
@@ -70,7 +70,7 @@
   padding-left: 200px;
   padding-right: 50px;
   height:300px;
-    color: black;
+  color: black;
   font-style: black;
   background-color: #A71D31;
   font-size:20px;
@@ -80,45 +80,34 @@
   align-items: center;
 }
 
-  
-
 .website__parallax-second {
-    /* The image used */
-    background-image: url('img/2.jpg');
-
-    /* Set a specific height */
-    min-height: 900px; 
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('img/2.jpg');
+  min-height: 900px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .website__parallax-third {
-    /* The image used */
-    background-image: url('img/9.jpg');
-
-    /* Set a specific height */
-    min-height: 900px; 
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('img/9.jpg');
+  min-height: 900px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .website__parallax-fourth {
-    /* The image used */
-    background-image: url('img/wspin.jpg');
-    min-height: 900px; 
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('img/wspin.jpg');
+  min-height: 900px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact {
@@ -150,3 +139,158 @@
 .social-header {
   padding: 40px;
 }
+
+  @media (max-width: 1200px) and (min-width: 900px) {
+
+    .website__covering-div {
+      font-size: 17px;
+      padding-left: 200px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .website__button {
+    width: 50px;
+    height: 700px;
+    color: black;
+    opacity: 0.8;
+    border-style: none;
+  }
+
+    .website__covering-div:before {
+      display: none;
+    }
+
+    .covering-div2 {
+      font-size: 17px;
+    }
+
+    .website__parallax-first {
+      min-height: 700px; 
+      width: 100%;
+      background-size: cover;
+    }
+
+    .website__parallax-second {
+      min-height: 500px; 
+      width: 100vw;
+    }
+
+    .website__parallax-third {
+      min-height: 500px; 
+      width: 100vw;
+    }
+
+   .website__parallax-fourth {
+      min-height: 500px; 
+      width: 100vw;
+    }
+  }
+    @media (max-width: 899px) and (min-width: 50px) {
+      .website__headerwrapper {
+        background-color: black;
+        height: 50px;
+        font-size: 10px;
+        width: 100vw;
+      }
+
+      .website__button {
+        width: 100px;
+        height: 200px;
+        color: black;
+        opacity: 0.8;
+        border-style: none;
+      }
+
+      .website__parallax-first { 
+        display: none;
+        font-size: 10px;
+        width: 100vw;
+        background-size: 100vw;
+        height: 400px;
+      }
+        .website__parallax-second { 
+          display: none;
+        width: 100vw;
+        background-size: auto 500px;
+        height: 400px;
+      }
+        .website__parallax-third { 
+          display: none;
+        width: 100vw;
+        background-size: auto 500px;
+        height: 400px;
+      }
+        .website__parallax-fourth {
+          display: none;
+        width: 100vw;
+        background-size: auto 500px;
+        height: 400px;
+      }
+
+            .website__covering-div {
+        margin: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        color: black;
+        font-style: black;
+        opacity: 0.75;
+        font-size: 18px;
+        margin-right: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 100vw;
+      }
+
+      .covering-div2 {
+        margin: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        color: black;
+        font-style: black;
+        opacity: 0.75;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 100vw;
+      }
+
+      .covering-div3 {
+        margin: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        color: black;
+        font-style: black;
+        opacity: 0.75;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100vw;
+      }
+
+      .website__covering-div:before {
+        display: none;
+      }
+
+
+      .contact {
+        font-size: 30px;
+        width: 100vw;
+        height: 600px;
+        margin: 1px;
+        padding: 1px;
+      }
+
+      .website_socialMedia--social {
+        width: 60px;
+        height: 60px;
+      }
+    }
