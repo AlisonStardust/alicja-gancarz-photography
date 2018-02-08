@@ -23,6 +23,9 @@ document.querySelector(".website__button").addEventListener("click", function ch
     $('#website__parallax-first').css("background-image", "url(img/11.jpg)");
     i++;
   } else if (i === 6) {
-    i === 0;
+    console.log(i);
+    $('#website__parallax-first').css("background-image", "url(img/3.jpg)");
+    i = 0;
+    console.log(i);
   }
 });
