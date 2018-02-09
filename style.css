@@ -1,8 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif; 
 }
+
+/*
+uncomment this for something crazy
+
+body {
+  background-image: url('img/pobrane.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}*/
 
 .website__headerwrapper {
   overflow: hidden;
@@ -59,14 +70,6 @@
   opacity: 0.7;
 }
 
-.website__button:hover:after {
-  opacity: 0.7;
-}
-
-.website__button:active:after {
-  opacity: 0.7;
-}
-
 .webiste__portrait {
   -webkit-transition: padding 2s;
 }
@@ -100,7 +103,7 @@
 }
 
 .website__parallax-first {
-  background-image: url('img/bw.jpg');
+  background-image: url('img/1.jpg');
 }
 
 .website__parallax-second {
@@ -108,11 +111,11 @@
 }
 
 .website__parallax-third {
-  background-image: url('img/9.jpg');
+  background-image: url('img/event/1.jpg');
 }
 
 .website__parallax-fourth {
-  background-image: url('img/wspin.jpg');
+  background-image: url('img/nature/1.jpg');
 }
 
 .website__covering-div {
@@ -128,14 +131,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .contact {
   margin: 10px;
   height: 700px;
-  background-color: red;
-  font-size:36px;
-  opacity: 0.5;
+  background-color: #ededed;
+  font-size: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +167,7 @@
 
 .website__covering-div {
 font-size: 17px;
-padding-left: 200px;
+padding-left: 50px;
 padding-right: 50px;
 display: flex;
 justify-content: center;
@@ -174,6 +177,7 @@ align-items: center;
 .website__button {
 width: 50px;
 height: 400px;
+margin: 10px;
 }
 
 .website__covering-div:before {
@@ -191,21 +195,23 @@ background-size: cover;
 }
 
 .website__parallax-second {
-min-height: 500px; 
-width: 100vw;
+min-height: 700px; 
+width: 100%;
 }
 
 .website__parallax-third {
-min-height: 500px; 
-width: 100vw;
+min-height: 700px; 
+width: 100%;
 }
 
 .website__parallax-fourth {
-min-height: 500px; 
-width: 100vw;
+min-height: 700px; 
+width: 100%;
 }
 }
-@media (max-width: 899px) and (min-width: 50px) {
+
+@media (max-width: 899px) and (min-width: 650px) {
+
 .website__headerwrapper {
   background-color: black;
   height: 50px;
@@ -220,74 +226,26 @@ width: 100vw;
   border-style: none;
 }
 
-.website__parallax-first { 
+.website__parallax { 
   display: none;
   font-size: 10px;
   width: 100vw;
   background-size: 100vw;
   height: 400px;
 }
-.website__parallax-second { 
-  display: none;
-  width: 100vw;
-  background-size: auto 500px;
-  height: 400px;
-}
-.website__parallax-third { 
-  display: none;
-  width: 100vw;
-  background-size: auto 500px;
-  height: 400px;
-}
-.website__parallax-fourth {
-  display: none;
-  width: 100vw;
-  background-size: auto 500px;
-  height: 400px;
-}
 
 .website__covering-div {
-  height: 600px;
+  height: 500px;
   color: black;
   font-style: black;
   font-size: 18px;
   margin: 1px;
-  margin-right: -80px;
-}
-
-.covering-div2 {
-  margin: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-  color: black;
-  font-style: black;
-  opacity: 0.75;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  width: 100vw;
-}
-
-.covering-div3 {
-  margin: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-  color: black;
-  font-style: black;
-  opacity: 0.75;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100vw;
+  padding: 20px;
+  text-align: center;
 }
 
 .contact {
   font-size: 30px;
-  width: 100vw;
   height: 600px;
   margin: 1px;
   padding: 1px;
@@ -296,5 +254,41 @@ width: 100vw;
 .website_socialMedia--social {
   width: 60px;
   height: 60px;
+}
+}
+
+@media (max-width: 650px) and (min-width: 200px) {
+
+.website__headerwrapper {
+  font-size: 10px;
+}
+
+.website__parallax { 
+  display: none;
+  font-size: 10px;
+  width: 100vw;
+  background-size: 100vw;
+  height: 400px;
+}
+
+.contact {
+  font-size: 20px;
+  height: 500px;
+  margin: 1px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.website_socialMedia--social {
+  width: 40px;
+  height: 40px;
+}
+
+.website__covering-div {
+  height: 800px;
+  font-size: 16px;
+  margin: 1px;
+  padding: 10px;
 }
 }
