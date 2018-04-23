@@ -114,6 +114,10 @@ body {
   background-image: url('img/nature/1.jpg');
 }
 
+.website__parallax-fifth {
+  background-image: url('img/lights/1.jpg');
+}
+
 .website__covering-div {
   margin: 10px;
   padding-left: 110px;
