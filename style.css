@@ -114,8 +114,12 @@ body {
   background-image: url('img/nature/1.jpg');
 }
 
-.website__parallax-fifth {
+.website__parallax-sixth {
   background-image: url('img/lights/1.jpg');
+}
+
+.website__parallax-fifth {
+  background-image: url('img/wedding/1.jpg');
 }
 
 .website__covering-div {
